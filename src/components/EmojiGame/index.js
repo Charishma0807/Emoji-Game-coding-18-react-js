@@ -73,14 +73,14 @@ class EmojiGame extends Component {
     }
   }
 
-  getSuffledEmojisList = () => {
+  getShuffledEmojisList = () => {
     const {emojisList} = this.props
 
-    return emojisList.sort(() => Math.random - 0.5)
+    return emojisList.sort(() => Math.random() - 0.5)
   }
 
   renderEmojisList = () => {
-    const shuffledEmojisList = this.getSuffledEmojisList()
+    const shuffledEmojisList = this.getShuffledEmojisList()
 
     return (
       <ul className="emojis-list-container">

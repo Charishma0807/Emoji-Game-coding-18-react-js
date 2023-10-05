@@ -2,7 +2,7 @@ import EmojiGame from './components/EmojiGame'
 
 import './App.css'
 
-const emojisList = [
+const testEmojisList = [
   {
     id: 0,
     emojiName: 'Face with stuck out tongue',
@@ -74,6 +74,6 @@ const emojisList = [
   },
 ]
 
-const App = () => <EmojiGame emojisList={emojisList} />
+const App = () => <EmojiGame emojisList={testEmojisList} />
 
 export default App
